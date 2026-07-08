@@ -11,7 +11,7 @@ class Runeward < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Runewardd/runeward/releases/download/v0.1.4/runeward_darwin_amd64.tar.gz"
-      sha256 "954960c89de1e1146460d037404e0ac9a7f827d69080986c37740db3806dee0f"
+      sha256 "ebab34148a823ab94cd8e74edbf8701d5fa480a3bf41015316ff88204428d947"
 
       define_method(:install) do
         bin.install "runeward"
@@ -19,7 +19,7 @@ class Runeward < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Runewardd/runeward/releases/download/v0.1.4/runeward_darwin_arm64.tar.gz"
-      sha256 "31be0a2756fb4e781970913c377e527006847262450df02cb398d9e9fe1adf65"
+      sha256 "4e3ab64433d22453a991ecf0fcacd6d7a44905179b441c8577560fb1a6d58861"
 
       define_method(:install) do
         bin.install "runeward"
@@ -30,14 +30,14 @@ class Runeward < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Runewardd/runeward/releases/download/v0.1.4/runeward_linux_amd64.tar.gz"
-      sha256 "a62911cb74542947fdd343ad038772c52857e0934726f628a1088b099e9b9951"
+      sha256 "71e41b3adafc36dea324e526a1d3273e10740ddd6740d8a64235bbea5db2c0f7"
       define_method(:install) do
         bin.install "runeward"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Runewardd/runeward/releases/download/v0.1.4/runeward_linux_arm64.tar.gz"
-      sha256 "bacd9ff8982efbc7c0ea9ec0d870a483092b21d653887ec9d84c1e5c3263257d"
+      sha256 "5076b59685e6cff2c3933adee5cf4688ad93c9f1f6c8850c83dc44a1ad0a7fe6"
       define_method(:install) do
         bin.install "runeward"
       end
