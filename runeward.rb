@@ -5,21 +5,21 @@
 class Runeward < Formula
   desc "Governed execution cells for AI agents"
   homepage "https://github.com/Runewardd/runeward"
-  version "0.2.1"
+  version "0.3.0-rc.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Runewardd/runeward/releases/download/v0.2.1/runeward_darwin_amd64.tar.gz"
-      sha256 "94e0b9bb740c437c72d308fd16c43c9bc67d1d4d83d1721b0ea277c0ef65a07f"
+      url "https://github.com/Runewardd/runeward/releases/download/v0.3.0-rc.2/runeward_darwin_amd64.tar.gz"
+      sha256 "d1c847d0ac741352af181bbd63844c468e49b6d8354d0994db79bc202b8c7761"
 
       define_method(:install) do
         bin.install "runeward"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Runewardd/runeward/releases/download/v0.2.1/runeward_darwin_arm64.tar.gz"
-      sha256 "7bad16379e35bfd3cc60272810f97f0354ab3eed6ce20da2ad442b4cb16740c1"
+      url "https://github.com/Runewardd/runeward/releases/download/v0.3.0-rc.2/runeward_darwin_arm64.tar.gz"
+      sha256 "153632920fde8875b603a3972ae724555490d6982264fcf01f8577c7c95fa813"
 
       define_method(:install) do
         bin.install "runeward"
@@ -29,15 +29,15 @@ class Runeward < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Runewardd/runeward/releases/download/v0.2.1/runeward_linux_amd64.tar.gz"
-      sha256 "f58d6912b6dfe2e49296b8221576748b1cebbf9a1a5424e8d9316784c4492393"
+      url "https://github.com/Runewardd/runeward/releases/download/v0.3.0-rc.2/runeward_linux_amd64.tar.gz"
+      sha256 "9c07ba569c7c39ede750cfcd02bc1aa55e0c8a0c89c5b1b6e91c9dce9b83c09c"
       define_method(:install) do
         bin.install "runeward"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Runewardd/runeward/releases/download/v0.2.1/runeward_linux_arm64.tar.gz"
-      sha256 "36ed9b9f306fe78eb28b6d8ade3b66fbf764756f8cea634454b2540fd5a1e69f"
+      url "https://github.com/Runewardd/runeward/releases/download/v0.3.0-rc.2/runeward_linux_arm64.tar.gz"
+      sha256 "ba0e0e7594bd8ec904c96b4c83921c11f55c384ea10c4f25ac4ad3a72830df3f"
       define_method(:install) do
         bin.install "runeward"
       end
